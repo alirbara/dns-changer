@@ -11,7 +11,7 @@ function config_ovs() {
 }
 
 function update_netplan() {
-    config_file="/etc/netplan/50-cloud-init.yml"
+    config_file="/etc/netplan/50-cloud-init.yaml"
 
     # Backup the config file
     sudo cp "$config_file" "$config_file.bak"
