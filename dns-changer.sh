@@ -17,7 +17,7 @@ function update_netplan() {
     sudo cp "$config_file" "$config_file.bak"
 
     # Update the config
-    sudo cat <<EOF > output.txt
+    sudo cat <<EOF > "$config_file"
 network:
   version: 2
   ethernets:
@@ -26,7 +26,7 @@ network:
       set-name: eth0
       nameservers:
           addresses: [8.8.8.8, 8.8.4.4]
-EOF > "$config_file"
+EOF
 
     # Set the correct permission
     sudo chmod 600 "$config_file"
