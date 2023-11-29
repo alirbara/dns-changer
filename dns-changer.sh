@@ -13,6 +13,9 @@ function config_ovs() {
 function update_netplan() {
     config_file="/etc/netplan/50-cloud-init.yaml"
 
+    # Get machine MAC Address
+    mac_address=$(ip link show | awk '/ether/ {print $2}')
+
     # Backup the config file
     sudo cp "$config_file" "$config_file.bak"
 
@@ -23,6 +26,8 @@ network:
   ethernets:
     eth0:
       dhcp4: true
+      match:
+        macaddress: $mac_address
       set-name: eth0
       nameservers:
           addresses: [8.8.8.8, 8.8.4.4]
