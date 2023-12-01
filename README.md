@@ -2,6 +2,18 @@
 
 This project aims to change your linux's default DNS resolver to Google public DNS.
 
+## Run
+
+### Clone the Repository and Run the Script
+
+```bash
+git clone https://github.com/AlirezaBaratian/dns-changer.git
+
+cd dns-changer
+
+./dns_changer.sh
+```
+
 ## Why
 
 The original motivation for this project was to fix [Hetzner](https://www.hetzner.com/) issue with some services such as, WhatsApp.
