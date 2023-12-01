@@ -8,7 +8,7 @@ The original motivation for this project was to fix [Hetzner](https://www.hetzne
 
 ## How
 
-We use [ovs](https://github.com/openvswitch/ovs) and [netplan](https://netplan.io/). We update the .yml config file assossiated with netplan by adding Google public DNS resolvers - 8.8.8.8 and 8.8.4.4 - as the primary and secondary DNS resolvers of the whole system. Finally, we apply the new config file for netplan.
+This script utilizes [ovs](https://github.com/openvswitch/ovs) and [netplan](https://netplan.io/). We update the .yml config file assossiated with netplan by adding Google public DNS resolvers - 8.8.8.8 and 8.8.4.4 - as the primary and secondary DNS resolvers of the whole system. Finally, the updated netplan configuration is applied.
 
 ## Requirements
 
