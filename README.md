@@ -1,10 +1,10 @@
-# Google DNS Forever
+# DNS Changer
 
-This project aims to change your linux's default DNS resolver to Google public DNS.
+This project aims to change your linux default DNS resolver to Google public DNS.
 
 ## Run
 
-### Clone the Repository and Run the Script
+Clone the Repository and Run the Script:
 
 ```bash
 git clone https://github.com/AlirezaBaratian/dns-changer.git
