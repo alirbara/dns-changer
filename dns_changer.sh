@@ -47,7 +47,7 @@ function main() {
         if [ $? -eq 0 ]; then
             echo "Successfully chnaged your DNS!"
         else
-            echo "There was a poblem while updating netplan config! Try restoring the backup."
+            echo "There was a poblem while updating netplan config! Try restoring the backup on $config_file.bak"
         fi
     else
         echo "Aborting... (ovs installation failed!)"
