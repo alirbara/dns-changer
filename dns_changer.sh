@@ -14,7 +14,7 @@ function update_netplan() {
     config_file="/etc/netplan/50-cloud-init.yaml"
 
     # Get machine MAC Address
-    mac_address=$(ip link show | awk '/ether/ {print $2}')
+    mac_address=$(ip link show | awk '/ether/ {print $2}' | head -n 1)
 
     # Backup the config file
     sudo cp "$config_file" "$config_file.bak"
