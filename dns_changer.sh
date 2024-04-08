@@ -12,6 +12,8 @@ function config_ovs() {
 
 function update_netplan() {
     config_file="/etc/netplan/50-cloud-init.yaml"
+    dns1=8.8.8.8
+    dns2=8.8.4.4
 
     # Get machine MAC Address
     mac_address=$(ip link show | awk '/ether/ {print $2}' | head -n 1)
@@ -30,7 +32,7 @@ network:
         macaddress: $mac_address
       set-name: eth0
       nameservers:
-          addresses: [8.8.8.8, 8.8.4.4]
+          addresses: [$dns1, $dns2]
 EOF
 
     # Set the correct permission
