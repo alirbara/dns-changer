@@ -10,6 +10,8 @@ Copy and paste this line on your shell:
 curl -sSL "https://raw.githubusercontent.com/AlirezaBaratian/dns-changer/main/dns_changer.sh" | bash
 ```
 
+Note that the script makes a backup of your current netplan config with the same name ending in .bak
+
 ## Why
 
 The original motivation for this project was to fix [Hetzner](https://www.hetzner.com/) issue with some services such as, WhatsApp.
