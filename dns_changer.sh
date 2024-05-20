@@ -35,7 +35,7 @@ network:
           addresses: [$dns1, $dns2]
 EOF
     )
-    sudo bash -c "echo '$netplan_config' > "$config_file"
+    sudo bash -c "echo '$netplan_config'" > "$config_file"
 
     # Set the correct permission
     sudo chmod 600 "$config_file"
