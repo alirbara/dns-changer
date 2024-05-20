@@ -33,3 +33,8 @@ Tested on Ubuntu 22.04 in Hetzner.
 ### After
 
 ![after](./after.png)
+
+## To-do
+
+- Check to run as sudo for the whole script instead of wierd sudo commands
+- 
