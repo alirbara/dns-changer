@@ -20,21 +20,4 @@ The original motivation for this project was to fix [Hetzner](https://www.hetzne
 
 This script utilizes [ovs](https://github.com/openvswitch/ovs) and [netplan](https://netplan.io/). We update the .yml config file assossiated with netplan by adding Google public DNS resolvers - 8.8.8.8 and 8.8.4.4 - as the primary and secondary DNS resolvers of the whole system. Finally, the updated netplan configuration is applied.
 
-## Requirements
-
 Tested on Ubuntu 22.04 in Hetzner.
-
-## Screenshots
-
-### Before
-
-![before](./before.png)
-
-### After
-
-![after](./after.png)
-
-## To-do
-
-- Check to run as sudo for the whole script instead of wierd sudo commands
-- 
